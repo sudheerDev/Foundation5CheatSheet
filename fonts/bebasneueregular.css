@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('bebasneueregular.eot');
+    src: url('bebasneueregular.eot') format('embedded-opentype'),
+         url('bebasneueregular.woff2') format('woff2'),
+         url('bebasneueregular.woff') format('woff'),
+         url('bebasneueregular.ttf') format('truetype'),
+         url('bebasneueregular.svg#BebasNeueRegular') format('svg');
+}

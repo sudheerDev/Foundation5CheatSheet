@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RosarioRegular';
+    src: url('rosario-regular.eot');
+    src: url('rosario-regular.eot') format('embedded-opentype'),
+         url('rosario-regular.woff2') format('woff2'),
+         url('rosario-regular.woff') format('woff'),
+         url('rosario-regular.ttf') format('truetype'),
+         url('rosario-regular.svg#RosarioRegular') format('svg');
+}
