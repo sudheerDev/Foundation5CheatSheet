@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'PrimeRegular';
-    src: url('primeregular.eot');
-    src: url('primeregular.eot') format('embedded-opentype'),
-         url('primeregular.woff2') format('woff2'),
-         url('primeregular.woff') format('woff'),
-         url('primeregular.ttf') format('truetype'),
-         url('primeregular.svg#PrimeRegular') format('svg');
-}

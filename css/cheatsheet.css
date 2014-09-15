@@ -1,260 +1,222 @@
  body {
-    font-family: 'GloberSemiBoldFree';
-    /* font smoothing for Chrome */
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-smooth: always;
-    transform: rotate(-0.0000000001deg);
-    -webkit-font-smoothing: subpixel-antialiased;
-  
-    text-shadow: transparent 0 0 1px;
-}
-.cover {
-    height: 200px;
-    background: #2ba6cb;
-}
-.cover img {
-    display: block;
-    margin: 0px auto;
-    height: 200px;
-    float: right;
-}
+     font-family: 'GloberSemiBoldFree';
+     /* font smoothing for Chrome */
+     -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+     font-smoothing: antialiased;
+     text-rendering: optimizeLegibility;
+     font-smooth: always;
+     transform: rotate(-0.0000000001deg);
+     -webkit-font-smoothing: subpixel-antialiased;
+     text-shadow: transparent 0 0 1px;
+ }
+ .cover {
+     height: 11rem;
+     background: #2ba6cb;
+ }
+ .cover img:not(.git) {
+     display: block;
+     margin: 0px auto;
+     height: 11rem;
+     float: right;
+ }
+ .git {
+     height: 48px;
+ }
+ .fork {
+     padding: 0.6rem 4rem 0.6rem 2rem;
+ }
+ .fork a {
+     color: #fff;
+ }
+ .cover h2 {
+     color: #fff;
+     font-family: 'RosarioRegular';
+     margin: 2rem 0px 0px 2rem;
+     line-height: 5rem;
+     font-size: 2.8125rem;
+ }
+ h3:not(.defaultH3) {
+     font-family: 'RosarioRegular';
+     margin: 1.2rem 0rem 1rem 0rem;
+ }
+ .cover small {
+     color: #fff;
+ }
+ .primary-color {
+     border-top: 40px solid #2ba6cb;
+     padding-top: 10px;
+ }
+ .secondary-color {
+     border-top: 40px solid #e9e9e9;
+     padding-top: 10px;
+ }
+ .alert-color {
+     border-top: 40px solid #f04124;
+     padding-top: 10px;
+ }
+ .success-color {
+     border-top: 40px solid #43ac6a;
+     padding-top: 10px;
+ }
+ .bodyfont-color {
+     border-top: 40px solid #222;
+     padding-top: 10px;
+ }
+ .headerfont-color {
+     border-top: 40px solid #222;
+     padding-top: 10px;
+ }
+ .fullwidth {
+     max-width: none !important;
+ }
+ .content {
+     padding: 10px 5px 0px 5px;
+     background: rgba(255, 255, 255, .5);
+     box-shadow: 2px 1px 3px #4593B1, -2px -1px 3px #CAD1D1;
+ }
+ [class*="block-grid-"] {
+     margin: 0 -0.1px;
+ }
+ .sub-content {
+     padding: 5px;
+ }
+ .has-tip {
+     font-weight: normal;
+ }
+ /*.content ul li {*/
+ /*    border-bottom: 1px solid rgba(0, 0, 0, .05);*/
+ /*}*/
+ .content p {
+     margin: 0px;
+ }
+ html,
+ body {
+     font-size: 90%;
+ }
+ .row {
+     max-width: 75rem;
+ }
+ /*a {*/
+ /*    color: #000;*/
+ /*}*/
+ .footer {
+     background: #2ba6cb;
+     height: 5rem;
+     margin-top: 2rem;
+ }
+ .footer h4 {
+     font-family: "globersemiboldfree";
+     line-height: 5rem;
+ }
+ .typography h1,
+ .typography h2,
+ .typography h3,
+ .typography h4,
+ .typography h5,
+ .typography h6 {
+     display: inline;
+ }
+ .typography .block {
+     display: block;
+ }
+ .button-panel .button {
+     margin: 0px;
+ }
+ .button-panel .columns {
+     margin: 0 0 1rem;
+ }
+ .sub-content code,
+ .forms code {
+     overflow-x: scroll;
+     margin: 1rem 0 1rem;
+     display: block;
+ }
+ .structure-panel .no-bullet li {
+     margin-bottom: 0.2rem;
+ }
+ .button-panel a ~ p {
+     margin-top: 0.3rem;
+ }
+ .content h4:not(.defaultH4) {
+     font-family: "BebasNeueBold";
+     background: #2ba6cb;
+     padding-left: 1em;
+     margin-bottom: 1em;
+     color: #fff;
+ }
+ .typography-panel ul {
+     margin-bottom: 0px;
+ }
+ .keystroke-code {
+     display: block;
+ }
+ .textClasses {
+     color: #008cba;
+ }
+ .textAlignPanel .text-left,
+ .textAlignPanel a:not(.button),
+ .textAlignPanel a:not(.alert-box) {
+     margin-top: 1.5em;
+ }
+ .forms ul p {
+     height: 1em;
+ }
+ @media only screen and (max-width: 40em) {
+     .cover h2 {
+         margin: 3rem 0px 0px 1rem;
+         line-height: 2rem;
+         font-size: 2rem;
+     }
+     .fork {
+         padding: 0.6rem 4rem 0.6rem 1rem;
+     }
+     .content h4:not(.defaultH4) {
+         font-size: 1.4rem;
+     }
+ }
+ @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+     .clearMedium {
+         clear: both;
+     }
+     .cover h2 {
+         line-height: 3rem;
+         font-size: 2.2rem;
+     }
+ }
+ @media only screen and (min-width: 64.063em) {
+     .clearLarge {
+         clear: both;
+     }
+ }
+ .sub-content ul {
+     margin-top: 0.5em;
+ }
+ .sideNav ul.no-bullet {
+     margin-top: 1em;
+ }
+ .toolTips span:not(.has-tip) {
+     padding-left: 1em;
+ }
+ .halfWidth {
+     width: 50%;
+ }
+ .reveal-modal + ul {
+     margin-top: 1em;
+ }
+ @font-face {
+     font-family: 'GloberSemiBoldFree';
+     src: url('../fonts/globersemiboldfree.eot');
+     src: url('../fonts/globersemiboldfree.eot') format('embedded-opentype'), url('../fonts/globersemiboldfree.woff2') format('woff2'), url('../fonts/globersemiboldfree.woff') format('woff'), url('../fonts/globersemiboldfree.ttf') format('truetype'), url('../fonts/globersemiboldfree.svg#GloberSemiBoldFree') format('svg');
+ }
+ @font-face {
+     font-family: 'BebasNeueBold';
+     src: url('../fonts/bebasneuebold.eot');
+     src: url('../fonts/bebasneuebold.eot') format('embedded-opentype'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype'), url('../fonts/bebasneuebold.svg#BebasNeueBold') format('svg');
+ }
 
-.cover h2 {
-    color: #fff;
-    font-family: 'RosarioRegular';
-    margin: 20px 0px 0px 20px;
-}
-.cover small {
-    color: #fff;
-    font-family: 'PrimeRegular';
-}
-.primary-color {
-    border-top: 40px solid #2ba6cb;
-    padding-top: 10px;
-}
-.secondary-color {
-    border-top: 40px solid #e9e9e9;
-    padding-top: 10px;
-}
-.alert-color {
-    border-top: 40px solid #f04124;
-    padding-top: 10px;
-}
-.success-color {
-    border-top: 40px solid #43ac6a;
-    padding-top: 10px;
-}
-.bodyfont-color {
-    border-top: 40px solid #222;
-    padding-top: 10px;
-}
-.headerfont-color {
-    border-top: 40px solid #222;
-    padding-top: 10px;
-}
-.fullwidth {
-    max-width: none !important;
-}
-.content {
-    padding: 10px 5px 0px 5px;
-    background: rgba(255, 255, 255, .5);
-    box-shadow: 2px 1px 3px #4593B1, -2px -1px 3px #CAD1D1;
-}
-[class*="block-grid-"] {
-    margin: 0 -0.1px;
-}
-.sub-content {
-    padding: 5px;
-}
-.has-tip {
-    font-weight: normal;
-}
-/*.content ul li {*/
-
-/*    border-bottom: 1px solid rgba(0, 0, 0, .05);*/
-
-/*}*/
-
-.content p {
-    margin: 0px;
-}
-html,
-body {
-    font-size: 90%;
-}
-.row {
-    max-width: 75rem;
-}
-/*a {*/
-/*    color: #000;*/
-/*}*/
-.footer {
-    background: #2ba6cb;
-    height: 5rem;
-    margin-top:2rem;
-}
-.footer h4{
-    font-family:"globersemiboldfree";
-    line-height:5rem;
-}
-.typography h1,.typography h2,.typography h3,.typography h4,.typography h5,.typography h6{
-    display:inline;
-}
-.typography .block{
-    display:block;
-}
-.button-panel .button{
-    margin:0px;
-}
-.button-panel .columns{
-    margin:0 0 1rem;
-}
-.sub-content code,.forms code{
-    overflow-x:scroll;
-    margin:1rem 0 1rem;
-    display:block;
-}
-
-.structure-panel .no-bullet li{
-    margin-bottom:0.2rem;
-}
-
-.button-panel a ~ p{
-    margin-top : 0.3rem;
-}
-
-/*.button-panel .button-group ~ p :not(p~p){*/
-/*    margin-top : 0.3rem;*/
-/*}*/
-/*.button-panel .button-bar ~ p :not(p~p){*/
-/*    margin-top : 0.3rem;*/
-/*}*/
-.content h4{
-    font-family:"BebasNeueBold";
-    background:#BAC7DB;
-    padding-left:1em;
-    margin-bottom:1em;
-}
-.typography-panel ul{
-    margin-bottom:0px;
-}
-.keystroke-code{
-    display:block;
-}
-/*.structure > div{*/
-/*    border-bottom: 4px solid #43ac6a;*/
-/*}*/
-/*body :last-child{*/
-/*    margin-bottom:30px;*/
-/*}*/
-.textClasses {
-    color:#008cba;
-}
-.textAlignPanel .text-left,.textAlignPanel a{
-    margin-top:1em;
-}
-.typography h4{
-    font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    background:none;
-    padding:0em;
-}
-.forms ul p{
-    height:1em;
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-    .clearMedium{
-        clear:both;
-    }
-}
-@media only screen and (min-width: 64.063em) { 
-    .clearLarge{
-        clear:both;
-    }
-}
-.sub-content ul {
-    margin-top:0.5em;
-}
-.sideNav ul.no-bullet{
-    margin-top:1em;
-}
-.toolTips span:not(.has-tip){
-    padding-left:1em;
-}
-.halfWidth{
-    width:50%;
-}
-@font-face {
-    font-family: 'GloberSemiBoldFree';
-    src: url('../fonts/globersemiboldfree.eot');
-    src: url('../fonts/globersemiboldfree.eot') format('embedded-opentype'),
-         url('../fonts/globersemiboldfree.woff2') format('woff2'),
-         url('../fonts/globersemiboldfree.woff') format('woff'),
-         url('../fonts/globersemiboldfree.ttf') format('truetype'),
-         url('../fonts/globersemiboldfree.svg#GloberSemiBoldFree') format('svg');
-}
-@font-face {
-    font-family: 'BebasNeueBook';
-    src: url('../fonts/bebasneuebook.eot');
-    src: url('../fonts/bebasneuebook.eot') format('embedded-opentype'),
-         url('../fonts/bebasneuebook.woff2') format('woff2'),
-         url('../fonts/bebasneuebook.woff') format('woff'),
-         url('../fonts/bebasneuebook.ttf') format('truetype'),
-         url('../fonts/bebasneuebook.svg#BebasNeueBook') format('svg');
-}
-@font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('../fonts/bebasneueregular.eot');
-    src: url('../fonts/bebasneueregular.eot') format('embedded-opentype'),
-         url('../fonts/bebasneueregular.woff2') format('woff2'),
-         url('../fonts/bebasneueregular.woff') format('woff'),
-         url('../fonts/bebasneueregular.ttf') format('truetype'),
-         url('../fonts/bebasneueregular.svg#BebasNeueRegular') format('svg');
-}
-@font-face {
-    font-family: 'BebasNeueBold';
-    src: url('../fonts/bebasneuebold.eot');
-    src: url('../fonts/bebasneuebold.eot') format('embedded-opentype'),
-         url('../fonts/bebasneuebold.woff2') format('woff2'),
-         url('../fonts/bebasneuebold.woff') format('woff'),
-         url('../fonts/bebasneuebold.ttf') format('truetype'),
-         url('../fonts/bebasneuebold.svg#BebasNeueBold') format('svg');
-}
-@font-face {
-    font-family: 'PrimeRegular';
-    src: url('../fonts/primeregular.eot');
-    src: url('../fonts/primeregular.eot') format('embedded-opentype'),
-         url('../fonts/primeregular.woff2') format('woff2'),
-         url('../fonts/primeregular.woff') format('woff'),
-         url('../fonts/primeregular.ttf') format('truetype'),
-         url('../fonts/primeregular.svg#PrimeRegular') format('svg');
-}
-@font-face {
-    font-family: 'SignikaRegular';
-    src: url('../fonts/signika-regular.eot');
-    src: url('../fonts/signika-regular.eot') format('embedded-opentype'),
-         url('../fonts/signika-regular.woff2') format('woff2'),
-         url('../fonts/signika-regular.woff') format('woff'),
-         url('../fonts/signika-regular.ttf') format('truetype'),
-         url('../fonts/signika-regular.svg#SignikaRegular') format('svg');
-}
-@font-face {
-    font-family: 'RosarioRegular';
-    src: url('../fonts/rosario-regular.eot');
-    src: url('../fonts/rosario-regular.eot') format('embedded-opentype'),
-         url('../fonts/rosario-regular.woff2') format('woff2'),
-         url('../fonts/rosario-regular.woff') format('woff'),
-         url('../fonts/rosario-regular.ttf') format('truetype'),
-         url('../fonts/rosario-regular.svg#RosarioRegular') format('svg');
-}
-@font-face {
-    font-family: 'ChivoRegular';
-    src: url('../fonts/chivo-regular.eot');
-    src: url('../fonts/chivo-regular.eot') format('embedded-opentype'),
-         url('../fonts/chivo-regular.woff2') format('woff2'),
-         url('../fonts/chivo-regular.woff') format('woff'),
-         url('../fonts/chivo-regular.ttf') format('truetype'),
-         url('../fonts/chivo-regular.svg#ChivoRegular') format('svg');
-}
+ @font-face {
+     font-family: 'RosarioRegular';
+     src: url('../fonts/rosario-regular.eot');
+     src: url('../fonts/rosario-regular.eot') format('embedded-opentype'), url('../fonts/rosario-regular.woff2') format('woff2'), url('../fonts/rosario-regular.woff') format('woff'), url('../fonts/rosario-regular.ttf') format('truetype'), url('../fonts/rosario-regular.svg#RosarioRegular') format('svg');
+ }

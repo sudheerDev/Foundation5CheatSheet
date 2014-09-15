@@ -11,13 +11,15 @@
 </head>
 
 <body>
-  <div class="row cover fullwidth">
-    <div class="large-6 columns">
-      <h2>FOUNDATION<small> Cheat sheet</small></h2>
-    </div>
-    <div class="large-6 columns">
-      <img src="img/hero-image.svg">
+  <div class="row collapse cover fullwidth">
+    <div class="small-8 medium-6 columns">
+      <h2>Foundation-5<small> Cheat sheet</small></h2>
+      <span class="fork"><a href="https://github.com/sudheerDev/CheatSheet" target="_blank">Fork me on github</a><img class="git" src="img/github.png"></span>
 
+    </div>
+
+    <div class="small-4 medium-6 columns">
+      <img src="img/hero-image.svg">
     </div>
   </div>
   <div class="row">
@@ -111,13 +113,11 @@
           <h4>Incomplete Rows</h4>
           <p>your row doesn't have a count that adds up to 12 columns, you can add class <code>end</code> to ovveride default behaviour of last column floating to right</p>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">div class="row"</span>
+            <li><span data-tooltip class="has-tip" title="new row">div class="row"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="medium-3 columns"</span>
+            <li><span data-tooltip class="has-tip" title="medium-3 columns">div class="medium-3 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="medium-3 columns"</span>
-            </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="medium-3 columns end"</span>
+            <li><span data-tooltip class="has-tip" title="stacks next to previous previous column">div class="medium-3 columns end"</span>
             </li>
           </ul>
 
@@ -137,13 +137,11 @@
         <div class="small-12 medium-4 columns">
           <h4>Source Rendering</h4>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">div class="large-9 large-push-3 columns"</span>
+            <li><span data-tooltip class="has-tip" title="push 3 columns on large screens">div class="large-9 large-push-3 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="large-3 large-pull-9 columns"</span>
+            <li><span data-tooltip class="has-tip" title="push 6 columns on medium screens">div class="medium-6 medium-push-6 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="medium-6 medium-push-6 columns"</span>
-            </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="medium-6 medium-pull-6 columns"</span>
+            <li><span data-tooltip class="has-tip" title="push 7 columns on small screens,push 5 columns on medium screens">small-5 small-push-7 medium-7 medium-push-5 columns</span>
             </li>
           </ul>
         </div>
@@ -151,9 +149,9 @@
           <h4>Block Grid</h4>
           <p>Evenly split the contents of a list within the grid</p>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">ul class="small-block-grid-2"</span>
+            <li><span data-tooltip class="has-tip" title="2 evenly spaced columns on all screens">ul class="small-block-grid-2"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">ul class="small-block-grid-2 large-block-grid-4"</span>
+            <li><span data-tooltip class="has-tip" title="2 evenly spaced columns on small screens and 4 evenly spaced columns on medium screens">ul class="small-block-grid-2 large-block-grid-4"</span>
             </li>
           </ul>
         </div>
@@ -229,9 +227,9 @@
         <h4>Accessibility</h4>
         <p>If you want to hide some content but still make it accessible for screen readers, use the hidden visibility classes.To reverse the rules defined by hidden, use the visible visibility classes.</p>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">class="hidden-for-small-only"</span>
+          <li><span data-tooltip class="has-tip" title="hidden on small screens but accessible on all screens">class="hidden-for-small-only"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">class="visible-for-small-only"</span>
+          <li><span data-tooltip class="has-tip" title="visible on small screens but accessible on all screens">class="visible-for-small-only"</span>
           </li>
         </ul>
       </div>
@@ -239,7 +237,7 @@
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h2>Buttons</h2>
+      <h3>Buttons</h3>
     </div>
     <div class="small-12 columns content button-panel">
       <h4>Basic</h4>
@@ -315,9 +313,9 @@
 
             </ul>
             <ul class="no-bullet">
-              <li><span data-tooltip class="has-tip" title="something new">ul class="button-group"</span>
+              <li><span data-tooltip class="has-tip" title="use ul with class 'button-group'">ul class="button-group"</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new">li a class="button"</span>
+              <li><span data-tooltip class="has-tip" title="li with class 'button'">li a class="button"</span>
               </li>
             </ul>
           </div>
@@ -338,11 +336,11 @@
               </ul>
             </div>
             <ul class="no-bullet">
-              <li><span data-tooltip class="has-tip" title="something new">div class="button bar"</span>
+              <li><span data-tooltip class="has-tip" title="apply class='button-bar' to div element">div class="button-bar"</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new">ul class="button-group"</span>
+              <li><span data-tooltip class="has-tip" title="use ul li structure for button groups with class='button-group'">ul class="button-group"</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new">li a class="button"</span>
+              <li><span data-tooltip class="has-tip" title="apply class='button' for li emements">li a class="button"</span>
               </li>
             </ul>
           </div>
@@ -362,10 +360,13 @@
               </li>
             </ul>
             <ul class="no-bullet">
-         <li><span data-tooltip class="has-tip" title="class='has-tip'">a href="#" class="button split" span data-dropdown="drop">../span../a../br</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-top'">ul id="drop" class="f-dropdown" data-dropdown-content</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li a href="#"</span></li>
-    </ul>
+              <li><span data-tooltip class="has-tip" title="have 'span' tag with data-dropdown as attribute inside 'a' tag along with 'br' at the end">a href="#" class="button split" span data-dropdown="drop">../span../a../br</span>
+              </li>
+              <li><span data-tooltip class="has-tip" title="ul tag with class'f-dropdown' and 'id' given in the span tag">ul id="drop" class="f-dropdown" data-dropdown-content</span>
+              </li>
+              <li><span data-tooltip class="has-tip" title="list emements using 'li a'">li a href="#"</span>
+              </li>
+            </ul>
 
           </div>
           <div class="small-12 medium-6  large-12 columns sub-content">
@@ -381,15 +382,177 @@
               </li>
             </ul>
             <ul class="no-bullet">
-         <li><span data-tooltip class="has-tip" title="class='has-tip'">a href="#" data-dropdown="drop1" class="button dropdown" ../br</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-top'">ul id="drop1" data-dropdown-content class="f-dropdown"</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li a href="#"</span></li>
-    </ul>
+              <li><span data-tooltip class="has-tip" title="apply data-dropdown attribute on 'a' tag with classes 'button dropdown and with 'br' tag at the end">a href="#" data-dropdown="drop1" class="button dropdown" ../br</span>
+              </li>
+              <li><span data-tooltip class="has-tip" title="ul tag with class 'f-dropdown' and 'id' given in the a tag">ul id="drop1" data-dropdown-content class="f-dropdown"</span>
+              </li>
+              <li><span data-tooltip class="has-tip" title="list emements using 'li a'">li a href="#"</span>
+              </li>
+            </ul>
 
           </div>
         </div>
       </div>
 
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>Utility Classes</h3>
+    </div>
+    <div class="small-12 columns content textAlignPanel">
+      <div class="medium-4 columns">
+        <h4>Float Classes</h4>
+        <p>You can change the float behavior of an element by adding <code>.left</code> or <code>.right</code> to an HTML element. To clear floats, add the class <code>.clearfix</code> to the parent element.</p>
+        <div class="clearfix">
+          <a class="button right">Float Right</a>
+          <a class="button left">Float Left</a>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" title="To clear floats">div class="clearfix"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" title="To align right">a class="button right"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" title="To align left">a class="button left"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <h4>Radius and Rounded</h4>
+        <p>The <code>.radius</code> and <code>.round</code> classes allow you to easily apply a border-radius to a UI-element. Adding the class to a button group will apply the border radius only to the outside corners.</p>
+        <a href="#" class="button small round">Round Button</a>
+        <a href="#" class="button small radius">Round Button</a>
+        <ul class="no-bullet">
+          <li><span data-tooltip="" class="has-tip" title="border style-round">class="button round"</span>
+          </li>
+          <li><span data-tooltip="" class="has-tip" title="border style-radius">a class="button radius"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <h4>Text Align Classes</h4>
+        <p>You can change the text alignment of an element by adding <code>.text-left</code>, <code>.text-right</code>, <code>.text-center</code> or <code>.text-justify</code> to an element.</p>
+        <p class="text-left">This text is left aligned</p>
+        <p class="text-right">This text is right aligned</p>
+        <p class="text-center">This text is center aligned</p>
+        <a href="#" class="textClasses" data-reveal-id="textClasses">More text alignment classes</a>
+
+        <div id="textClasses" class="reveal-modal" data-reveal>
+          <table style="width:100%;">
+            <tbody>
+              <tr>
+                <td><code>.text-left</code>
+                </td>
+                <td><code>.text-right</code>
+                </td>
+                <td><code>.text-center</code>
+                </td>
+                <td><code>.text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.small-text-left</code>
+                </td>
+                <td><code>.small-text-right</code>
+                </td>
+                <td><code>.small-text-center</code>
+                </td>
+                <td><code>.small-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.small-only-text-left</code>
+                </td>
+                <td><code>.small-only-text-right</code>
+                </td>
+                <td><code>.small-only-text-center</code>
+                </td>
+                <td><code>.small-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.medium-text-left</code>
+                </td>
+                <td><code>.medium-text-right</code>
+                </td>
+                <td><code>.medium-text-center</code>
+                </td>
+                <td><code>.medium-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.medium-only-text-left</code>
+                </td>
+                <td><code>.medium-only-text-right</code>
+                </td>
+                <td><code>.medium-only-text-center</code>
+                </td>
+                <td><code>.medium-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.large-text-left</code>
+                </td>
+                <td><code>.large-text-right</code>
+                </td>
+                <td><code>.large-text-center</code>
+                </td>
+                <td><code>.large-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.large-only-text-left</code>
+                </td>
+                <td><code>.large-only-text-right</code>
+                </td>
+                <td><code>.large-only-text-center</code>
+                </td>
+                <td><code>.large-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xlarge-text-left</code>
+                </td>
+                <td><code>.xlarge-text-right</code>
+                </td>
+                <td><code>.xlarge-text-center</code>
+                </td>
+                <td><code>.xlarge-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xlarge-only-text-left</code>
+                </td>
+                <td><code>.xlarge-only-text-right</code>
+                </td>
+                <td><code>.xlarge-only-text-center</code>
+                </td>
+                <td><code>.xlarge-only-text-justify</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>.xxlarge-text-left</code>
+                </td>
+                <td><code>.xxlarge-text-right</code>
+                </td>
+                <td><code>.xxlarge-text-center</code>
+                </td>
+                <td><code>.xxlarge-text-justify</code>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <td>Align Left</td>
+                <td>Align Right</td>
+                <td>Align Center</td>
+                <td>Justify</td>
+              </tr>
+            </thead>
+          </table>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -410,13 +573,13 @@
             </div>
           </div>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">div class="small-3 columns"</span>
+            <li><span data-tooltip class="has-tip" title="column for label">div class="small-3 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">label for="right-label" class="right inline"</span>
+            <li><span data-tooltip class="has-tip" title="label tag with class='right-inline'">label for="right-label" class="right inline"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">div class="small-9 columns</span>
+            <li><span data-tooltip class="has-tip" title="column fot input">div class="small-9 columns</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">input type="text" id="right-label" placeholder="Inline Text Input"</span>
+            <li><span data-tooltip class="has-tip" title="input tag">input type="text" id="right-label" placeholder="Inline Text Input"</span>
             </li>
           </ul>
 
@@ -432,15 +595,15 @@
             </div>
           </div>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new"> div class="row collapse"</span>
+            <li><span data-tooltip class="has-tip" title="div with class 'row collpase'-remove padding"> div class="row collapse"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new"> div class="small-10 columns"</span>
+            <li><span data-tooltip class="has-tip" title="column for input"> div class="small-10 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">input type="text" placeholder="Hex Value"</span>
+            <li><span data-tooltip class="has-tip" title="input tag">input type="text" placeholder="Hex Value"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new"> div class="small-2 columns"</span>
+            <li><span data-tooltip class="has-tip" title="column for button"> div class="small-2 columns"</span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">  a href="#" class="button postfix"</span>
+            <li><span data-tooltip class="has-tip" title="button element">  a href="#" class="button postfix"</span>
             </li>
 
           </ul>
@@ -462,11 +625,11 @@
           </div>
         </div>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">div class="switch"</span>
+          <li><span data-tooltip class="has-tip" title="div with class 'switch'">div class="switch"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">input id="exampleCheckboxSwitch" type="checkbox"</span>
+          <li><span data-tooltip class="has-tip" title="input tag with id and type='checkbox'">input id="exampleCheckboxSwitch" type="checkbox"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">label for="exampleCheckboxSwitch"</span>
+          <li><span data-tooltip class="has-tip" title="label with the above id">label for="exampleCheckboxSwitch"</span>
           </li>
         </ul>
 
@@ -479,11 +642,11 @@
             <input type="text" class="error" />
             <small class="error">Invalid entry</small>
             <ul class="no-bullet">
-              <li><span data-tooltip class="has-tip" title="something new">label class="error"</span>
+              <li><span data-tooltip class="has-tip" title="label tag with class 'error'">label class="error"</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new"> input type="text" class="error"</span>
+              <li><span data-tooltip class="has-tip" title="input type with class='error'"> input type="text" class="error"</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new">small class="error"</span>
+              <li><span data-tooltip class="has-tip" title="error message">small class="error"</span>
               </li>
             </ul>
 
@@ -492,9 +655,9 @@
             <textarea class="error" placeholder="Message..."></textarea>
             <small class="error">Invalid entry</small>
             <ul class="no-bullet">
-              <li><span data-tooltip class="has-tip" title="something new">textarea class="error" placeholder="Message..."</span>
+              <li><span data-tooltip class="has-tip" title="textarea with class='error'">textarea class="error" placeholder="Message..."</span>
               </li>
-              <li><span data-tooltip class="has-tip" title="something new"> small class="error"</span>
+              <li><span data-tooltip class="has-tip" title="error message"> small class="error"</span>
               </li>
             </ul>
           </div>
@@ -508,13 +671,13 @@
           <input type="hidden">
         </div>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">div class="range-slider" data-slider</span>
+          <li><span data-tooltip class="has-tip" title="div tag with class='range-slider' and attribute data-slider">div class="range-slider" data-slider</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">span class="range-slider-handle" role="slider"</span>
+          <li><span data-tooltip class="has-tip" title="span tag with class='range-slider-handle and role attribute'">span class="range-slider-handle" role="slider"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">span class="range-slider-active-segment"</span>
+          <li><span data-tooltip class="has-tip" title="span tag with class range-slider-active-segment">span class="range-slider-active-segment"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">input type="hidden"</span>
+          <li><span data-tooltip class="has-tip" title="hidden input type">input type="hidden"</span>
           </li>
         </ul>
 
@@ -531,22 +694,22 @@
         <h4 class="block">Headers</h4>
         <h1><span>h1.</span></h1>
         <h2><span>h2.</span></h2>
-        <h3><span>h3.</span></h3>
-        <h4><span>h4.</span></h4>
+        <h3 class="defaultH3"><span>h3.</span></h3>
+        <h4 class="defaultH4"><span>h4.</span></h4>
         <h5><span>h5.</span></h5>
         <h6><span>h6.</span></h6>
         <h4 class="block">Sub Headers</h4>
         <h1 class="subheader"><span>h1.</span></h1>
         <h2 class="subheader"><span>h2.</span></h2>
-        <h3 class="subheader"><span>h3.</span></h3>
-        <h4 class="subheader"><span>h4.</span></h4>
+        <h3 class="subheader defaultH3"><span>h3.</span></h3>
+        <h4 class="subheader defaultH4"><span>h4.</span></h4>
         <h5 class="subheader"><span>h5.</span></h5>
         <h6 class="subheader"><span>h6.</span></h6>
-        <h4 class="block">Small Header Segments</h4>
+        <h4 class="block heading">Small Header Segments</h4>
         <h1><small>h1.</small></h1>
         <h2><small>h2.</small></h2>
-        <h3><small>h3.</small></h3>
-        <h4><small>h4.</small></h4>
+        <h3 class="defaultH3"><small>h3.</small></h3>
+        <h4 class="defaultH4"><small>h4.</small></h4>
         <h5><small>h5.</small></h5>
         <h6><small>h6</small></h6>
       </div>
@@ -555,19 +718,19 @@
         <ul class="no-bullet">
           <li>Unordered list</li>
           <ul class="circle">
-            <li><span data-tooltip class="has-tip" title="something new">circle as bullet -div class="circle"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='circle'">circle as bullet -div class="circle"</span>
             </li>
           </ul>
           <ul class="disc">
-            <li><span data-tooltip class="has-tip" title="something new">disc as bullet -div class="disc"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='disc'">disc as bullet -div class="disc"</span>
             </li>
           </ul>
           <ul class="square">
-            <li><span data-tooltip class="has-tip" title="something new">sqaure as bullet -div class="square"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='square'">sqaure as bullet -div class="square"</span>
             </li>
           </ul>
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">no bullet -div class="no-bullet"</span>
+            <li><span data-tooltip class="has-tip" title="ul with class='no-bullet'">no bullet -div class="no-bullet"</span>
             </li>
           </ul>
         </ul>
@@ -575,7 +738,7 @@
         <ul class="no-bullet">
           <li>Ordered list</li>
           <ol>
-            <li><span data-tooltip class="has-tip" title="something new">this is an ordered list</span>
+            <li><span data-tooltip class="has-tip" title="typical ol">this is an ordered list</span>
             </li>
           </ol>
         </ul>
@@ -597,19 +760,19 @@
           </li>
         </ul>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">ul class="vcard"</span>
+          <li><span data-tooltip class="has-tip" title="ul with class='vcard'">ul class="vcard"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="fn"</span>
+          <li><span data-tooltip class="has-tip" title="Name and surname">li class="fn"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="street-address"</span>
+          <li><span data-tooltip class="has-tip" title="Address">li class="street-address"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="locality"</span>
+          <li><span data-tooltip class="has-tip" title="Locality">li class="locality"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li span class="state"</span>
+          <li><span data-tooltip class="has-tip" title="State">li span class="state"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li span class="zip"</span>
+          <li><span data-tooltip class="has-tip" title="Zip code">li span class="zip"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="email"</span>
+          <li><span data-tooltip class="has-tip" title="Email:id">li class="email"</span>
           </li>
         </ul>
       </div>
@@ -623,7 +786,7 @@
         </div>
         <div class="small-12 columns">
           <h4>Description List</h4>
-          <p>dl..dt..dd</p>
+          <span data-tooltip class="has-tip" title="Definition list tags">dl..dt..dd</span>
           <dl>
             <dt>Definition Title</dt>
             <dd>Definition Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh .</dd>
@@ -670,7 +833,7 @@
           <li><a href="#">Link 5</a>
           </li>
         </ul>
-        <p>ul class="inline-list"</p>
+        <span data-tooltip class="has-tip" title="ul list with class='inline-list'">ul class="inline-list"</span>
       </div>
 
 
@@ -690,8 +853,6 @@
           </li>
           <li><a href="">2</a>
           </li>
-          <li><a href="">3</a>
-          </li>
           <li class="unavailable"><a href="">&hellip;</a>
           </li>
           <li><a href="">12</a>
@@ -702,15 +863,15 @@
           </li>
         </ul>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">ul class="pagination"</span>
+          <li><span data-tooltip class="has-tip" title="ul list with class='pagination'">ul class="pagination"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="arrow unavailable" </span>
+          <li><span data-tooltip class="has-tip" title="arrow unavailable class">li class="arrow unavailable" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="current" </span>
+          <li><span data-tooltip class="has-tip" title="current class">li class="current" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="unavailable" </span>
+          <li><span data-tooltip class="has-tip" title="unavaible class for ellipsis in the middle.">li class="unavailable" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="arrow"</span>
+          <li><span data-tooltip class="has-tip" title="arrow class">li class="arrow"</span>
           </li>
         </ul>
       </div>
@@ -726,13 +887,13 @@
           </dd>
         </dl>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">dl class="sub-nav" </span>
+          <li><span data-tooltip class="has-tip" title="dl with class='sub-nav'">dl class="sub-nav" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">dt</span>
+          <li><span data-tooltip class="has-tip" title="dt for term">dt</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">dd class="active" a href=""</span>
+          <li><span data-tooltip class="has-tip" title="dd with class='active' for active items">dd class="active" a href=""</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">dd a href=""</span>
+          <li><span data-tooltip class="has-tip" title="dd with link">dd a href=""</span>
           </li>
         </ul>
       </div>
@@ -762,11 +923,11 @@
         </div>
         <p>Specifying the number of items <code>one-up</code> through <code>six-up</code> will ensure the items are evenly spaced.</p>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">div class="icon-bar five-up"</span>
+          <li><span data-tooltip class="has-tip" title="Splits icon bar into 5 even columns">div class="icon-bar five-up"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">a class="item" </span>
+          <li><span data-tooltip class="has-tip" title="link with class 'item'">a class="item" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">img src=""</span>
+          <li><span data-tooltip class="has-tip" title="image">img src=""</span>
           </li>
         </ul>
 
@@ -784,19 +945,19 @@
           </li>
         </ul>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">ul class="breadcrumbs"</span>
+          <li><span data-tooltip class="has-tip" title="ul class with 'breadcrumbs'">ul class="breadcrumbs"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="unavailable"  </span>
+          <li><span data-tooltip class="has-tip" title="Unavailable link">li class="unavailable"  </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="current"</span>
+          <li><span data-tooltip class="has-tip" title="Current link">li class="current"</span>
           </li>
         </ul>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">nav class="breadcrumbs"</span>
+          <li><span data-tooltip class="has-tip" title="nav with class='breadcrumbs'">nav class="breadcrumbs"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">a class="unavailable"</span>
+          <li><span data-tooltip class="has-tip" title="Unavailable link">a class="unavailable"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">a class="current"</span>
+          <li><span data-tooltip class="has-tip" title="Current link">a class="current"</span>
           </li>
         </ul>
       </div>
@@ -806,7 +967,7 @@
           <ul class="side-nav">
             <li><a href="#">Link 1</a>
             </li>
-            <li><a href="#">Link 2</a>
+            <li class="active"><a href="#">Link 2</a>
             </li>
             <li><a href="#">Link 3</a>
             </li>
@@ -816,9 +977,9 @@
         </div>
         <div class="small-8 columns">
           <ul class="no-bullet">
-            <li><span data-tooltip class="has-tip" title="something new">ul class="side-nav" </span>
+            <li><span data-tooltip class="has-tip" title="ul with class='side-nav'">ul class="side-nav" </span>
             </li>
-            <li><span data-tooltip class="has-tip" title="something new">li class="active"  </span>
+            <li><span data-tooltip class="has-tip" title="active link">li class="active"  </span>
             </li>
           </ul>
         </div>
@@ -847,19 +1008,19 @@
         </nav>
 
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="something new">nav class="top-bar"</span>
+          <li><span data-tooltip class="has-tip" title="Nav with class='top-bar'">nav class="top-bar"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">ul class="title-area" </span>
+          <li><span data-tooltip class="has-tip" title="Title area">ul class="title-area" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="name" </span>
+          <li><span data-tooltip class="has-tip" title="Name">li class="name" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="toggle-topbar menu-icon ... a span Menu" </span>
+          <li><span data-tooltip class="has-tip" title="Toggle class">li class="toggle-topbar menu-icon ... a span Menu" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">section class="top-bar-section"</span>
+          <li><span data-tooltip class="has-tip" title="Contains left and right positioned menu items">section class="top-bar-section"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">ul class="left" </span>
+          <li><span data-tooltip class="has-tip" title="Left positioned element">ul class="left" </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="something new">li class="active" </span>
+          <li><span data-tooltip class="has-tip" title="Active element">li class="active" </span>
           </li>
         </ul>
 
@@ -874,11 +1035,17 @@
     <div class="small-12 columns content">
       <div class="medium-6 columns">
         <h4>Flex Video</h4>
+
         <div class="flex-video">
-          <iframe width="420" height="315" src="//www..com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
         </div>
-        <p>width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen</p>
-        <p>iframe width=</p>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="flex-video div">div class="flex-video"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="iframe with width,height and source">iframe width="420" height="315" src="//www..com/embed/aiBt44rrslw" frameborder="0" allowfullscreen</span>
+          </li>
+        </ul>
+
       </div>
       <div class="medium-6 columns">
         <h4>Thumbnails</h4>
@@ -888,8 +1055,12 @@
           </a>
         </div>
         <div class="small-8 columns">
-          <p>a class="th" href="path/to/your/img"</p>
-          <p>img src="path/to/your/img-th"</p>
+          <ul class="no-bullet">
+            <li><span data-tooltip class="has-tip" title="a tag with link to original img">a class="th" href="path/to/your/img"</span>
+            </li>
+            <li><span data-tooltip class="has-tip" title="image tag with link to thumbnail">img src="path/to/your/img-th"</span>
+            </li>
+          </ul>
         </div>
         <div class="small-12 columns">
           <h4>Clearing Lightbox</h4>
@@ -915,6 +1086,12 @@
               </a>
             </li>
           </ul>
+          <ul class="no-bullet">
+            <li><span data-tooltip class="has-tip" title="ul with class='clearing-thumbnail and data attribute: data-clearing'">ul class="clearing-thumbs" data-clearing</span>
+            </li>
+            <li><span data-tooltip class="has-tip" title="list images with source to thumbnail and link to image">li..a href="path/to/your/img"..img src="path/to/your/img-th"../a>../li</span>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -938,19 +1115,24 @@
           <a href="#" class="close">&times;</a>
         </div>
         <p>Alert boxes take 100% width and you can add .radius, .success, .alert, .round, .secondary or .close to create close box</p>
-        <p>div data-alert class="alert-box"</p>
-        <p>a href="#" class="close"</p>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="div with class='alert-box' and data-attribute: data-alert">div data-alert class="alert-box"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="close link">a href="#" class="close"</span>
+          </li>
+        </ul>
+
       </div>
       <div class="medium-6 large-3 columns">
         <h4>Panels</h4>
         <div class="panel">
           <h5>This is a regular panel.</h5>
         </div>
-        <p>div class="panel".</p>
+        <span data-tooltip class="has-tip" title="div with class='panel'">div class="panel"</span>
         <div class="panel callout radius">
           <h5>This is a callout panel.</h5>
         </div>
-        <p>div class="panel callout radius".</p>
+        <span data-tooltip class="has-tip" title="With custom classes">div class="panel callout radius"</span> 
       </div>
       <div class="medium-6 large-3 columns toolTips clearMedium">
         <h4>Tooltips</h4>
@@ -976,104 +1158,166 @@
           <a class="close-reveal-modal">&#215;</a>
         </div>
         <ul class="no-bullet">
-          <li><span data-tooltip class="has-tip" title="class='has-tip'">a href="#" data-reveal-id="myModal"</span>
+          <li><span data-tooltip class="has-tip" title="a tag with data attribute: data-reveal-id">a href="#" data-reveal-id="myModal"</span>
           </li>
-          <li><span data-tooltip class="has-tip" title="class='has-tip tip-top'">div id="myModal" class="reveal-modal" data-reveal </span>
+          <li><span data-tooltip class="has-tip" title="div for modal with id given in the data attribute above">div id="myModal" class="reveal-modal" data-reveal </span>
           </li>
-          <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'"> a class="close-reveal-modal" >&#215; </span>
+          <li><span data-tooltip class="has-tip" title="close link for modal"> a class="close-reveal-modal" >&#215</span>
           </li>
         </ul>
 
       </div>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="small-12 columns">
       <h3>Content</h3>
     </div>
     <div class="small-12 columns content">
-    <div class="medium-6 large-3 columns">
-      <h4>Pricing Tables</h4>
-    <ul class="pricing-table">
-      <li class="title">Standard</li>
-      <li class="price">$99.99</li>
-      <li class="description">An awesome description</li>
-      <li class="bullet-item">1 Database</li>
-      <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
-    </ul>
-      <ul class="no-bullet">
-         <li><span data-tooltip class="has-tip" title="class='has-tip'">ul class="pricing-table"</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-top'">li class="title"</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li class="price"</span></li>
-          <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li class="description"</span></li> 
-           <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li class="bullet-item"</span></li>
-            <li><span data-tooltip class="has-tip" title="class='has-tip tip-left'">li class="cta-button"</span></li>  
-    </ul>
+      <div class="medium-6 large-3 columns">
+        <h4>Pricing Tables</h4>
+        <ul class="pricing-table">
+          <li class="title">Standard</li>
+          <li class="price">$99.99</li>
+          <li class="description">An awesome description</li>
+          <li class="bullet-item">1 Database</li>
+          <li class="cta-button"><a class="button" href="#">Buy Now</a>
+          </li>
+        </ul>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="Unordered list with class ='pricing-table'">ul class="pricing-table"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Title">li class="title"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Price">li class="price"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Description">li class="description"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Items">li class="bullet-item"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Call to action button">li class="cta-button"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Progress Bars</h4>
+        <div class="progress">
+          <span class="meter"></span>
+        </div>
+        <div class="progress success round">
+          <span class="meter halfWidth"></span>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="div with class='progress'">div class="progress"</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="span with class='meter'">span class="meter" style="width: [1 - 100]%"</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Tables</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non .</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id .</td>
+              <td>Content Goes Here</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="table tags">table thead tr th tbody tr td</span>
+          </li>
+        </ul>
+      </div>
+      <div class="medium-6 large-3 columns">
+        <h4>Data Equalizer</h4>
+        <div class="row" data-equalizer>
+          <div class="medium-6 columns">
+            <div class="panel" data-equalizer-watch>
+
+              <p>Pellentesque habitant morbi ultricies eget, tempor sit amet</p>
+            </div>
+          </div>
+          <div class="medium-6 columns">
+            <div class="callout panel" data-equalizer-watch>
+
+              <ul class="no-bullet">
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                <li>Aliquam tincidunt mauris eu risus.</li>
+
+              </ul>
+
+            </div>
+
+
+          </div>
+        </div>
+        <ul class="no-bullet">
+          <li><span data-tooltip class="has-tip" title="div with data attribute: data-equalizer">div class="row" data-equalizer</span>
+          </li>
+          <li><span data-tooltip class="has-tip" title="Add data attribute: data-equalizer-watch to equalize columns">div data-equalizer-watch</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="medium-6 large-3 columns">
-    <h4>Progress Bars</h4>
-      <div class="progress">
-  <span class="meter"></span>
-</div>
-      <div class="progress success round">
-  <span class="meter halfWidth" ></span>
-</div>
-     <ul class="no-bullet">
-         <li><span data-tooltip class="has-tip" title="class='has-tip'">div class="progress"</span></li>
-         <li><span data-tooltip class="has-tip" title="class='has-tip tip-top'">span class="meter" style="width: [1 - 100]%"</span></li>
-    </ul>
-    </div>
-    <div class="medium-6 large-3 columns">
-      <h4>Tables</h4>
-      <table>
-  <thead>
-    <tr>
-      <th>Table Header</th>
-      <th>Table Header</th>
-      <th>Table Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer content Donec id elit non .</td>
-      <td>Content Goes Here</td>
-    </tr>
-    <tr>
-      <td>Content Goes Here</td>
-      <td>This is longer Content Goes Here Donec id .</td>
-      <td>Content Goes Here</td>
-    </tr>
-  </tbody>
-</table>
-     <ul class="no-bullet">
-         <li><span data-tooltip class="has-tip" title="class='has-tip'">table thead tr th tbody tr td</span></li>
-    </ul>
-    </div>
-    <div class="medium-6 large-3 columns">
-    <h4>Data Equalizer</h4>
-      <div class="row" data-equalizer>
-  <div class="medium-6 columns">
-    <div class="panel" data-equalizer-watch>
-     
-      <p>Pellentesque habitant morbi ultricies eget, tempor sit amet</p>
-    </div>
+
   </div>
-  <div class="medium-6 columns">
-    <div class="callout panel" data-equalizer-watch>
-      
-      <ul class="no-bullet">
-         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-         <li>Aliquam tincidunt mauris eu risus.</li>
-        
-      </ul>
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>JavaScript</h3>
     </div>
-  </div>
-</div>
-</div>
+    <div class="small-12 columns content">
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/kitchen_sink.html" target="_blank">Kitchen sink</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/interchange.html" target="_blank">Interchange</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/offcanvas.html" target="_blank">Off Canvas</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/magellan.html" target="_blank">Magellan</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/orbit.html" target="_blank">Orbit</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/joyride.html" target="_blank">Joyride</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/abide.html" target="_blank">Abide Validation</a>
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="medium-4 columns">
+        <ul class="no-bullet">
+          <li><a href="http://foundation.zurb.com/docs/components/dropdown.html" target="_blank">Dropdowns</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/accordion.html" target="_blank">Accordion</a>
+          </li>
+          <li><a href="http://foundation.zurb.com/docs/components/tabs.html" target="_blank">Tabs</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
   </div>
   <div class="footer fullwidth text-center">
     <h4>Cheat sheet created by Sudheer</h4>

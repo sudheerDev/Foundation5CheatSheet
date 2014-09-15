@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ChivoRegular';
-    src: url('chivo-regular.eot');
-    src: url('chivo-regular.eot') format('embedded-opentype'),
-         url('chivo-regular.woff2') format('woff2'),
-         url('chivo-regular.woff') format('woff'),
-         url('chivo-regular.ttf') format('truetype'),
-         url('chivo-regular.svg#ChivoRegular') format('svg');
-}
