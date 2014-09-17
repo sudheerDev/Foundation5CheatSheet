@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foundation CheatSheet</title>
+  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/cheatsheet.css" />
   <script src="js/vendor/modernizr.js"></script>
@@ -23,10 +24,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="small-12 columns">
-      <h3>Default colors</h3>
-      <div class="small-12 columns">
-        <ul class="small-block-grid-3 large-block-grid-6 content">
+     <div class="small-12 columns">
+             <h3>Default colors</h3>
+     </div>
+       <div class="small-12 columns content">
+        <ul class="small-block-grid-3 large-block-grid-6">
           <li class="primary-color">Primary
             <br>#2ba6cb
           </li>
@@ -41,9 +43,9 @@
           <li class="headerfont-color">Header Font
             <br>#222222</li>
         </ul>
+        </div>
       </div>
-    </div>
-  </div>
+    
   <div class="row">
     <div class="small-12 columns">
       <h3>Structure</h3>
@@ -88,7 +90,7 @@
           </ul>
         </div>
       </div>
-      <div class="small-12 columns">
+    
         <div class="small-12 medium-4 columns">
           <h4>Basic</h4>
           <ul class="no-bullet">
@@ -156,7 +158,7 @@
           </ul>
         </div>
 
-      </div>
+     
 
     </div>
   </div>
@@ -240,6 +242,7 @@
       <h3>Buttons</h3>
     </div>
     <div class="small-12 columns content button-panel">
+      <div class="small-12 columns">
       <h4>Basic</h4>
       <div class="small-12 large-6 columns sub-content">
 
@@ -299,12 +302,11 @@
           <p>a class="button round"</p>
         </div>
       </div>
-
-      <div class="small-12 columns">
-        <div class="small-12 large-6 columns sub-content">
-
-          <div class="small-12 medium-5 large-12 columns">
-            <h4>Button Groups</h4>
+      </div>
+        <div class="small-12 medium-6 large-6 columns">
+        <h4>Button Groups</h4>
+          <div class="small-12 medium-5 large-12 columns sub-content">
+            
             <ul class="button-group">
               <li><a href="#" class="button">Button 1</a>
               </li>
@@ -319,8 +321,11 @@
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-7 large-12 columns">
+          <div class="clear">
             <h4>Button Bars</h4>
+          </div>
+          <div class="small-12 medium-7 large-12 columns sub-content">
+            
             <div class="button-bar">
               <ul class="button-group">
                 <li><a href="#" class="small button">Button 1</a>
@@ -346,9 +351,10 @@
           </div>
         </div>
 
-        <div class="small-12 large-6 columns">
+        <div class="small-12 medium-6 large-6 columns">
+         <h4>Split Buttons</h4>
           <div class="small-12 medium-6 large-12 columns sub-content">
-            <h4>Split Buttons</h4>
+           
             <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a>
             <br>
             <ul id="drop" class="f-dropdown" data-dropdown-content="">
@@ -369,8 +375,11 @@
             </ul>
 
           </div>
-          <div class="small-12 medium-6  large-12 columns sub-content">
+          <div class="clear">
             <h4>Dropdown</h4>
+          </div>
+          <div class="small-12 medium-6  large-12 columns sub-content">
+          
             <a href="#" data-dropdown="drop1" class="button dropdown">Dropdown Button</a>
             <br>
             <ul id="drop1" data-dropdown-content="" class="f-dropdown">
@@ -392,9 +401,9 @@
 
           </div>
         </div>
+      
       </div>
-
-    </div>
+    
   </div>
   <div class="row">
     <div class="small-12 columns">
@@ -743,8 +752,8 @@
           </ol>
         </ul>
         <h4>keystroke</h4>
-        <p>For example, to close your browser hit <kbd>Cmd</kbd> + <kbd>Q</kbd>
-          <pre><code class="language-html keystroke-code"><div class="code-container"><span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Cmd<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span> + <span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Q<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
+        <p>For example, to close your browser hit <kbd>Cmd</kbd>+<kbd>Q</kbd>
+          <pre><code class="language-html keystroke-code"><div class="code-container"><span class="tag">&lt;<span class="title">p</span>&gt;</span><span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Cmd<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span>+<span class="tag">&lt;<span class="title">kbd</span>&gt;</span>Q<span class="tag">&lt;/<span class="title">kbd</span>&gt;</span><span class="tag">&lt;/<span class="title">p</span>&gt;</span></div></code></pre>
         </p>
       </div>
 
@@ -1062,27 +1071,30 @@
             </li>
           </ul>
         </div>
+      <div class="clear">    
+      <h4>Clearing Lightbox</h4>
+      </div>
         <div class="small-12 columns">
-          <h4>Clearing Lightbox</h4>
+      
           <ul class="clearing-thumbs" data-clearing="">
             <li>
               <a class="th" href="/img/comet.jpg">
-                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="/img/comet-th-sm.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="img/comet-th-sm.jpg">
               </a>
             </li>
             <li>
               <a class="th" href="/img/earth.jpg">
-                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="/img/earth-th-sm.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="img/earth-th-sm.jpg">
               </a>
             </li>
             <li>
               <a class="th" href="/img/launch.jpg">
-                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="/img/launch-th-sm.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="img/launch-th-sm.jpg">
               </a>
             </li>
             <li>
               <a class="th" href="/img/satelite.jpg">
-                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="/img/satelite-th-sm.jpg">
+                <img data-caption="Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum." src="img/satelite-th-sm.jpg">
               </a>
             </li>
           </ul>
@@ -1215,7 +1227,7 @@
           </li>
         </ul>
       </div>
-      <div class="medium-6 large-3 columns">
+      <div class="medium-6 large-3 clearMedium columns">
         <h4>Tables</h4>
         <table>
           <thead>
@@ -1322,6 +1334,7 @@
   <div class="footer fullwidth text-center">
     <h4>Cheat sheet created by Sudheer</h4>
   </div>
+  
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>
