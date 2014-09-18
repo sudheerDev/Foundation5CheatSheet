@@ -1,3 +1,7 @@
+ html,
+ body {
+  font-size: 90%;
+ }
  body {
   font-family: 'GloberSemiBoldFree';
   /* font smoothing for Chrome */
@@ -6,53 +10,48 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-smooth: always;
-  -webkit-transform: rotate(-0.0000000001deg);
-          transform: rotate(-0.0000000001deg);
+  transform: rotate(-0.0000000001deg);
   -webkit-font-smoothing: subpixel-antialiased;
   text-shadow: transparent 0 0 1px;
  }
  .cover {
-  height: 176px;
   height: 11rem;
   background: #2ba6cb;
  }
  .cover img:not(.git) {
   display: block;
   margin: 0px auto;
-  height: 176px;
   height: 11rem;
   float: right;
+ }
+ .cover h2 {
+  color: #fff;
+  font-family: 'RosarioRegular';
+  margin: 2rem 0px 0px 2rem;
+  line-height: 5rem;
+  font-size: 2.8125rem;
+ }
+ .cover small {
+  color: #fff;
+ }
+ .row {
+  max-width: 75rem;
  }
  .git {
   height: 48px;
  }
  .fork {
-  padding: 9px 64px 9px 32px;
   padding: 0.6rem 4rem 0.6rem 2rem;
  }
  .fork a {
   color: #fff;
  }
- .clear {
-  clear: both;
- }
- .cover h2 {
-  color: #fff;
-  font-family: 'RosarioRegular';
-  margin: 32px 0px 0px 32px;
-  margin: 2rem 0px 0px 2rem;
-  line-height: 80px;
-  line-height: 5rem;
-  font-size: 45px;
-  font-size: 2.8125rem;
- }
  h3:not(.defaultH3) {
   font-family: 'RosarioRegular';
-  margin: 19px 0px 16px 0px;
   margin: 1.2rem 0rem 1rem 0rem;
  }
- .cover small {
-  color: #fff;
+ .clear {
+  clear: both;
  }
  .primary-color {
   border-top: 40px solid #2ba6cb;
@@ -95,30 +94,34 @@
  .has-tip {
   font-weight: normal;
  }
+ .button-panel a ~ p,
+ .button-group ~ ul,
+ .f-dropdown ~ ul,
+ .button-bar ~ ul,
+ .dropdown ~ ul,
+ .label ~ p,
+ .inline-list ~ span {
+  margin-top: 0.4rem;
+ }
+ .vcard ~ ul,
+ .top-bar ~ ul,
+ .panel.callout.radius,.clearing-assembled ~ ul
+ {
+  margin-top: 1rem;
+ }
+ .success.label ~ p ,.thumbMargin a{
+  margin-bottom: 1rem;
+ }
  .content p {
   margin: 0px;
  }
- html,
- body {
-  font-size: 90%;
- }
- .row {
-  max-width: 1200px;
-  max-width: 75rem;
- }
- code {
-  padding: 0px;
- }
  .footer {
   background: #2ba6cb;
-  height: 80px;
   height: 5rem;
-  margin-top: 32px;
   margin-top: 2rem;
  }
  .footer h4 {
   font-family: "globersemiboldfree";
-  line-height: 80px;
   line-height: 5rem;
  }
  .typography h1,
@@ -136,36 +139,19 @@
   margin: 0px;
  }
  .button-panel .columns {
-  margin: 0 0 16px;
   margin: 0 0 1rem;
  }
  .sub-content code,
  .forms code {
   overflow-x: scroll;
-  margin: 16px 0 16px;
   margin: 1rem 0 1rem;
   display: block;
  }
  .structure-panel .no-bullet li {
-  margin-bottom: 3px;
   margin-bottom: 0.2rem;
  }
- .button-panel a ~ p,
- .button-group ~ ul,
- .f-dropdown ~ ul,
- .button-bar ~ ul,
- .dropdown ~ ul,
- .label ~ p,
- .inline-list ~ span {
-  margin-top: 6px;
-  margin-top: 0.4rem;
- }
- .vcard ~ ul,
- .clearing-assembled ~ ul,
- .top-bar ~ ul,
- .panel.callout.radius {
-  margin-top: 16px;
-  margin-top: 1rem;
+ .button-panel a ~ p {
+  margin-top: 0.3rem;
  }
  .content h4:not(.defaultH4) {
   font-family: "BebasNeueBold";
@@ -176,11 +162,6 @@
  }
  .typography-panel ul {
   margin-bottom: 0px;
- }
- .success.label ~ p,
- .th {
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
  }
  .keystroke-code {
   display: block;
@@ -198,19 +179,14 @@
  }
  @media only screen and (max-width: 40em) {
   .cover h2 {
-   margin: 48px 0px 0px 16px;
    margin: 3rem 0px 0px 1rem;
-   line-height: 32px;
    line-height: 2rem;
-   font-size: 32px;
    font-size: 2rem;
   }
   .fork {
-   padding: 9px 64px 9px 16px;
    padding: 0.6rem 4rem 0.6rem 1rem;
   }
   .content h4:not(.defaultH4) {
-   font-size: 22px;
    font-size: 1.4rem;
   }
  }
@@ -219,9 +195,7 @@
    clear: both;
   }
   .cover h2 {
-   line-height: 48px;
    line-height: 3rem;
-   font-size: 35px;
    font-size: 2.2rem;
   }
  }
